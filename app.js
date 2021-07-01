@@ -10,6 +10,7 @@ app.use(express.json());
 
 connectDB();
 
+app.use("/", require("./routes/index"));
 app.use("/api", require("./routes/url"));
 
 const port = process.env.PORT;
